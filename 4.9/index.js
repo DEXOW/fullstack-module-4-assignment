@@ -2,7 +2,7 @@
 const express = require('express');
 const app = express();
 const exphbs = require('express-handlebars');
-const PORT = 3000;
+const PORT = 3001;
 
 
 // Set the view engine for express to use Handlebars
@@ -69,3 +69,5 @@ app.get('/dog', function (req, res) {
 app.listen(PORT, function () {
   console.log(`Server started at http://localhost:${PORT}`);
 });
+
+module.exports = app;
